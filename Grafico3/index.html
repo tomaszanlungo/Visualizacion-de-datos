@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <h1>
+      Horas de mision por pais/año
+    </h1>
+    <p>
+      Este grafico nos devolvera distintos puntos donde cada uno representa 
+      la cantidad de <b>horas de mision</b> y la <b>edad</b> de una determinada persona, donde
+      se pude hacer uso de los <i>diferentes selectores</i> para hacer mas especifica la busqueda.
+    </p>
+   
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart 08 - slider</title>
+    <style>
+      #chart {
+        overflow-y: auto;
+        background-color: rgb(198, 193, 192);
+    
+      }
+      #chart svg {
+        max-width: initial; 
+        background-color: rgb(198, 193, 192);
+    
+      }
+      #input {
+        width: 250px;
+        margin-left:20px;
+      }
+      #paises {
+        margin: 10px;
+      }
+      #value-input {
+        margin-top: 17px;
+        margin-left: 5px;
+      }
+      #selector {
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .legend-title {
+        margin-right: 10px;
+      }
+      div#selector {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        height: 50px;
+        width: 300px;
+        background-color: rgb(198, 193, 192);
+        padding-right: 50px;
+        margin-left: 79px;
+        border-style: solid;
+        border-width: thin;
+        margin-bottom: 10px;
+      }
+      h1,p { 
+        font-family: Arial; 
+        margin-left: 40px;
+      }
+      h1 {
+        border-bottom: groove rgb(198, 193, 192) 10px;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="chart"></div>
+    <div id="selector">
+      <p style="color: black;"><b>Seleccione año:</b></p>
+      <input type="range" min="2010" max="2019" step="1" value="2010" id="input"  />
+      <p id="value-input"></p>
+    </div>
+    <div id="selector">
+      <p style="color: black"><b>Seleccione pais:</b></p>
+      <select id="paises">
+        <option value="Ru">U.S.S.R/Rusia</option>
+        <option value="EU">EE.UU</option>
+        <option value="Can">Canada</option>
+        <option value="Ja">Japon</option>
+        <option value="Ita">Italia</option>
+        <option value="Rei">Reino Unido</option>
+        <option value="Pb">Paises Bajos</option>
+        <option value="Chi">China</option>
+        <option value="Ale">Alemania</option>
+        <option value="Din">Dinamarca</option>
+        <option value="Ka">Kazajistan</option>
+        <option value="Fra">Francia</option>
+        <option value="EAU">Emiratos Arabes Unidos</option>
+          
+      </select>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
