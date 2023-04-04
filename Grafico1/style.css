@@ -1,0 +1,29 @@
+#chart{  
+
+    color: yellow;
+    background-color: black;
+    display: grid;
+    place-content: center;
+    
+}
+#chart svg{
+    background-color: black;
+}
+
+
+h1{
+    color: yellow;
+    text-align: center;
+}
+
+p{
+    color: white;
+    text-transform:none;
+}
+
+body{
+    background-color: black;
+}
+
+
+

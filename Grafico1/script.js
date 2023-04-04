@@ -29,9 +29,11 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       range: ["#a3c4f3", "#ffd670"]
 
     },
+    
   })
  
   d3.select('#chart').append(() => chart)
+  addTooltips(chart);
 
 })
 
