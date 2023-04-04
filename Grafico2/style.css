@@ -1,0 +1,48 @@
+#titulo{
+    text-align: center;   
+    font-family: "Times New Roman";
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 20px;
+    letter-spacing: -1px;
+    color: yellow;
+}
+p{
+    color: white;
+    text-transform:none;
+    text-align: center;
+}
+
+b{
+    color: yellow;
+}
+
+#chart{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 30px;
+    color:yellow;
+    text-indent: 11px;
+}
+
+#chart svg{
+    background-color: black;
+    border-style: groove;
+    border-width: thin;
+}
+
+body{
+    background-image: url('tierra.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.hover{
+    background-color: black;
+}
