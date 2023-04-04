@@ -83,6 +83,3 @@ function createChart(yearSelected, paisSelected) {
   d3.select('#chart figure').remove()
   d3.select('#chart').append(() => chart)
 }
-
-
-//hola
