@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Grafico 1</title>
+    <style>
+      #chart {
+        overflow-y: auto;
+      }
+      #chart svg {
+        max-width: initial;
+      }
+      
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a href="../index.html">←</a>
+    <h1>Grafico de barras</h1>
+    <p>El gráfico en cuestión realiza una contabilización de las <b>diversas ocupaciones</b> desempeñadas 
+      por los astronautas, dividiéndolas según su estado <b>civil</b> o <b>militar</b>. Además, el color de las barras distingue entre
+      los <b>géneros</b> de los astronautas representados en el gráfico. De esta manera, se puede observar 
+      una diferenciación clara entre las distintas ocupaciones, así como las proporciones de género 
+      dentro de cada una de ellas.</p>
+    <div id="chart"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+    <script type= "module" src="script.js"></script>
+  </body>
+</html>
