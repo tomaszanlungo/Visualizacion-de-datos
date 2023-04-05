@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafico3</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a href="../index.html">←</a>
+    <h1>
+      Horas de mision por pais/año
+    </h1>
+    <p>
+       El gráfico proporcionará varios puntos, donde cada uno de ellos representará la cantidad de 
+      <b>horas de misión</b> y la <b>edad</b> de una persona específica. Además, se puede utilizar 
+      los diferentes selectores para hacer más precisa la búsqueda.
+    </p>
+    <div id="chart"></div>
+
+    <div id="selectores">
+
+      <div id="selector">
+        <p><b>Seleccione año:</b></p>
+        <input type="range" min="2010" max="2019" step="1" value="2010" id="input"  />
+        <p id="value-input"></p>
+      </div>
+
+      <div id="selector">
+        <p><b>Seleccione pais:</b></p>
+        <select id="paises">
+          <option value="U.S.S.R/Rusia">U.S.S.R/Rusia</option>
+          <option value="EE.UU.">EE.UU.</option>
+        </select>
+      </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+    <script type="module" src="script.js"></script>
+
+  </body>
+</html>
