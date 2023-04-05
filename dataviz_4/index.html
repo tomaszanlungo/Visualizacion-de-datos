@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafico 4</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <a href="../index.html">←</a>
+    <h1>Horas de mision por ocupacion a traves de los años</h1>
+    <p id="parrafo">El gráfico presenta múltiples líneas de diferentes colores, 
+      cada una de ellas representa una <b>ocupacion</b> específica. 
+      Los puntos que se encuentran en la gráfica y que están unidos 
+      por estas líneas representan la suma <b>total de horas trabajadas</b> 
+      por cada ocupación en un año determinado dentro del período 2010-2019. 
+      Asi, el gráfico permite comparar la cantidad de horas totales 
+      trabajadas por cada ocupación para un año específico.
+    </p>
+
+    <p id="leyenda"> <b>Ocupaciones:</b></p> 
+    <svg id="legend"> 
+      <circle cx="120" cy="20" r="8" fill="blue"/> 
+      <text x="135" y="25" >Ingeniero Aeroespacial</text>
+      <circle cx="120" cy="50" r="8" fill="red"/> 
+      <text x="135" y="55">Comandante</text>  
+      <circle cx="120" cy="80" r="8" fill="green"/> 
+      <text x="135" y="85">Especialista Aeroespacial</text>
+      <circle cx="120" cy="110" r="8" fill="magenta"/> 
+      <text x="135" y="115">Piloto</text>
+    </svg>
+
+  
+    <div id="chart"> </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
